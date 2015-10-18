@@ -1,0 +1,1 @@
+/Users/yuzebin/.dotfiles/zsh/zshenv
