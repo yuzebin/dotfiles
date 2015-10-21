@@ -131,8 +131,15 @@ $
 # Registers:
 "0@	LINE	0
 	);
-"1	LINE	0
-	Calibre \344\271\246\345\272\223
+""1	LINE	0
+	.vim/bundle/EasyGrep/
+	.vim/bundle/FuzzyFinder/
+	.vim/bundle/L9/
+	.vim/bundle/ShowPairs/
+	.vim/bundle/VOoM/
+	.vim/bundle/YankRing.vim/
+	.vim/bundle/vim-expand-region/
+	.vim/bundle/vim-quickhl/
 "2	BLOCK	3
 	    
 	    
@@ -142,70 +149,69 @@ $
 	    
 	    
 	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
 "3	LINE	0
-	$(".navbar-inner a.brand",".list-resources").click(function(ev){ev.preventDefault();$(this).parent().next().toggle();})
-"4	LINE	0
-	//$(function(){$(".tab-content").addClass("hide");$(".navbar-inner a").click(function(ev){ev.preventDefault();$(this.parent).next().toggle();})})
+	Calibre \344\271\246\345\272\223
+"4	BLOCK	3
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 "5	LINE	0
-	////////////////$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})}) 
+	$(".navbar-inner a.brand",".list-resources").click(function(ev){ev.preventDefault();$(this).parent().next().toggle();})
 "6	LINE	0
-	</script>
+	//$(function(){$(".tab-content").addClass("hide");$(".navbar-inner a").click(function(ev){ev.preventDefault();$(this.parent).next().toggle();})})
 "7	LINE	0
-	$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})})  
+	////////////////$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})}) 
 "8	LINE	0
-	<script type="text/javascript" charset="utf-8">
+	</script>
 "9	LINE	0
-	class MyApplication(web.application):
-	    def run(self, port=8080, *middleware):
-	        func = self.wsgifunc(*middleware)
-	        return web.httpserver.runsimple(func, ('0.0.0.0', port))
-	
-	if __name__=='__main__':
-	    app = MyApplication(urls, globals())
-	    app.run(port=9999)
-	
+	$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})})  
 "a	CHAR	0
 	:%s/"/""/g
 	:%s/^\d\+$/$vid&/g
@@ -225,29 +231,30 @@ $
 	yyp
 "z	CHAR	0
 	pjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkk
-""-	CHAR	0
+"-	CHAR	0
 	"
 
 # File marks:
 'M  428  11  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/cloud-vego-analytics/summary.html
-'0  1  46  ~/.git/COMMIT_EDITMSG
-'1  108  0  ~/.gitignore
-'2  109  31  ~/.gitignore
-'3  2  0  ~/.gitignore
-'4  1  0  ~/.gitignore_global
-'5  91  9  ~/.gitignore
-'6  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
-'7  1  9  ~/.gitignore
-'8  1  0  ~/z_init.sh
-'9  5  0  ~/.git/COMMIT_EDITMSG
+'0  1  19  ~/.git/COMMIT_EDITMSG
+'1  82  0  ~/.gitignore
+'2  116  0  ~/.gitignore
+'3  117  31  ~/.gitignore
+'4  2  0  ~/.gitignore
+'5  1  0  ~/.gitignore_global
+'6  99  9  ~/.gitignore
+'7  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
+'8  1  9  ~/.gitignore
+'9  1  0  ~/z_init.sh
 
 # Jumplist (newest first):
--'  1  46  ~/.git/COMMIT_EDITMSG
--'  108  0  ~/.gitignore
--'  91  32  ~/.gitignore
--'  17  0  ~/.gitignore
+-'  1  19  ~/.git/COMMIT_EDITMSG
+-'  82  0  ~/.gitignore
+-'  116  0  ~/.gitignore
 -'  1  0  ~/.gitignore
--'  109  31  ~/.gitignore
+-'  99  32  ~/.gitignore
+-'  17  0  ~/.gitignore
+-'  117  31  ~/.gitignore
 -'  2  0  ~/.gitignore
 -'  29  0  ~/.gitignore
 -'  1  0  ~/.gitignore_global
@@ -337,30 +344,31 @@ $
 -'  24  0  /Volumes/HD500G/Users/yuzebin/Downloads/GeoIP2-City_20150825/__Tagbar__
 -'  9  12  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_2
 -'  16  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_2
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_2
--'  2  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/nginx/app.conf
--'  108  0  ~/.gitignore
+-'  82  0  ~/.gitignore
+-'  116  0  ~/.gitignore
 
 # History of marks within files (newest to oldest):
 
 > ~/.git/COMMIT_EDITMSG
-	"	1	46
-	^	1	47
-	.	1	46
+	"	1	19
+	^	1	20
+	.	1	20
 	+	4	41
 	+	2	0
-	+	1	46
+	+	1	20
 
 > ~/.gitignore
-	"	108	0
-	^	91	33
-	.	91	0
+	"	82	0
+	.	82	0
 	+	1	9
-	+	91	38
-	+	108	10
+	+	99	38
+	+	116	10
 	+	2	0
-	+	109	0
-	+	91	0
+	+	117	0
+	+	99	0
+	+	117	28
+	+	117	0
+	+	82	0
 
 > ~/.gitignore_global
 	"	1	0
