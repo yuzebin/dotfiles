@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/render
+~MSle0~/calibre
 
 # Last Substitute Search Pattern:
 ~MSle0&\ *$
@@ -17,10 +17,10 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :'<,'>y+
 :w
-:wq
 :wqk
 :q!
 :'<,'>y
@@ -69,6 +69,7 @@ $
 :help syntastic
 
 # Search String History (newest to oldest):
+?/calibre
 ? \s\+$
 ?/render
 ?/uber
@@ -118,7 +119,6 @@ $
 ?/syntas
 ?/F3
 ?/nip
-?/super
 
 # Expression History (newest to oldest):
 
@@ -132,18 +132,71 @@ $
 "0@	LINE	0
 	);
 "1	LINE	0
-	$(".navbar-inner a.brand",".list-resources").click(function(ev){ev.preventDefault();$(this).parent().next().toggle();})
-"2	LINE	0
-	//$(function(){$(".tab-content").addClass("hide");$(".navbar-inner a").click(function(ev){ev.preventDefault();$(this.parent).next().toggle();})})
+	Calibre \344\271\246\345\272\223
+"2	BLOCK	3
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 "3	LINE	0
-	////////////////$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})}) 
+	$(".navbar-inner a.brand",".list-resources").click(function(ev){ev.preventDefault();$(this).parent().next().toggle();})
 "4	LINE	0
-	</script>
+	//$(function(){$(".tab-content").addClass("hide");$(".navbar-inner a").click(function(ev){ev.preventDefault();$(this.parent).next().toggle();})})
 "5	LINE	0
-	$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})})  
+	////////////////$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})}) 
 "6	LINE	0
-	<script type="text/javascript" charset="utf-8">
+	</script>
 "7	LINE	0
+	$(function(){$(".tab-content").addClass("hide");$(".navbar-inner").click(function(ev){ev.preventDefault();$(this).next().toggle();})})  
+"8	LINE	0
+	<script type="text/javascript" charset="utf-8">
+"9	LINE	0
 	class MyApplication(web.application):
 	    def run(self, port=8080, *middleware):
 	        func = self.wsgifunc(*middleware)
@@ -153,65 +206,6 @@ $
 	    app = MyApplication(urls, globals())
 	    app.run(port=9999)
 	
-"8	LINE	0
-	 def GET(self,name):
-	    stringUtils = StringUtils()
-	    rules = stringUtils.readRules()
-	    logs = stringUtils.readLogs()
-	    # pdb.set_trace()
-	    return render.index(rules, logs)
-	
-"9	LINE	0
-	class StringUtils:
-	    def readRules(self):
-	        if not os.path.isfile(rulesFilePath) or os.path.getsize(rulesFilePath) == 0:
-	            ruleDemo = '#This is a demo for an api mock rule, keep the format and remove the "#" before.\n#\n'
-	            ruleDemo += '#req:http://tuan.baidu.com/remotedns?\n'
-	            ruleDemo += '#resp:{"data":[],"errmsg":"success","errno":0}\n'
-	            return ruleDemo
-	        rulesFile = codecs.open(rulesFilePath,'r', 'utf-8')
-	        rules = rulesFile.read()
-	        return rules
-	
-	    def writeRules(self, rules):
-	        rulesFile = codecs.open(rulesFilePath,'w', 'utf-8')
-	        # pdb.set_trace()
-	        rulesFile.write(rules)
-	        rulesFile.close()
-	
-	    def readLogs(self):
-	        if not os.path.isfile(logsFilePath) or os.path.getsize(logsFilePath) == 0:
-	            return 'Here will show you the request logs.'
-	        logsFile = codecs.open(logsFilePath, 'r', 'utf-8')
-	        logs = logsFile.read()
-	        logsFile.close()
-	        return logs
-	
-	    def writeLogs(self, logs):
-	        if not os.path.isfile(logsFilePath):
-	            logsFile = codecs.open(logsFilePath,'w', 'utf-8')
-	            logsFile.write(logs)
-	            logsFile.close()
-	        else:
-	            size = os.path.getsize(logsFilePath)
-	            logsFile = None
-	            if size > 1000000:
-	                logsFile = codecs.open(logsFilePath,'w', 'utf-8')
-	            else:
-	                logsFile = codecs.open(logsFilePath,'a', 'utf-8')
-	            logsFile.write(logs)
-	            logsFile.close()
-	
-	    def readRulesArray(self):
-	        rules = []
-	        if not os.path.isfile(rulesFilePath):
-	            return rules
-	        file = codecs.open(rulesFilePath, 'r', 'utf-8')
-	        req = None
-	        resp = None
-	        while 1:
-	            line = file.readline()
-	            if not line:
 "a	CHAR	0
 	:%s/"/""/g
 	:%s/^\d\+$/$vid&/g
@@ -231,23 +225,36 @@ $
 	yyp
 "z	CHAR	0
 	pjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkk
-"-	CHAR	0
-	<
+""-	CHAR	0
+	"
 
 # File marks:
 'M  428  11  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/cloud-vego-analytics/summary.html
-'0  1  0  /Volumes/oiva80zebin/rsyncbatch.sh
-'1  22  0  ~/.ssh/config
-'2  61  0  ~/.ssh/config
-'3  37  11  ~/.ssh/config
-'4  174  0  /usr/local/lib/python2.7/site-packages/mock_server/templates/list_resources.html
-'5  177  0  /usr/local/lib/python2.7/site-packages/mock_server/templates/list_resources.html
-'6  174  133  /usr/local/lib/python2.7/site-packages/mock_server/templates/list_resources.html
-'7  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/index.html
-'8  168  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/mockserver.py
-'9  35  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/index.html
+'0  1  46  ~/.git/COMMIT_EDITMSG
+'1  108  0  ~/.gitignore
+'2  109  31  ~/.gitignore
+'3  2  0  ~/.gitignore
+'4  1  0  ~/.gitignore_global
+'5  91  9  ~/.gitignore
+'6  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
+'7  1  9  ~/.gitignore
+'8  1  0  ~/z_init.sh
+'9  5  0  ~/.git/COMMIT_EDITMSG
 
 # Jumplist (newest first):
+-'  1  46  ~/.git/COMMIT_EDITMSG
+-'  108  0  ~/.gitignore
+-'  91  32  ~/.gitignore
+-'  17  0  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  109  31  ~/.gitignore
+-'  2  0  ~/.gitignore
+-'  29  0  ~/.gitignore
+-'  1  0  ~/.gitignore_global
+-'  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
+-'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
+-'  1  0  ~/z_init.sh
+-'  5  0  ~/.git/COMMIT_EDITMSG
 -'  1  0  /Volumes/oiva80zebin/rsyncbatch.sh
 -'  22  0  ~/.ssh/config
 -'  1  0  ~/.ssh/config
@@ -332,23 +339,37 @@ $
 -'  16  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_2
 -'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_2
 -'  2  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/nginx/app.conf
--'  5  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_1
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_1
--'  10  2  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/configs/NERD_tree_1
--'  85  3  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/docker/zebin-dev/Makefile
--'  34  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/index.html
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/__Tagbar__
--'  3  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/__Tagbar__
--'  4  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/__Tagbar__
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/index.html
--'  168  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/mockserver.py
--'  20  4  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/__Tagbar__
--'  37  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/__Tagbar__
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/mockserver.py
--'  35  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/index.html
--'  1  0  /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/python/Simple-Mock-Server/templates/__Tagbar__
+-'  108  0  ~/.gitignore
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/COMMIT_EDITMSG
+	"	1	46
+	^	1	47
+	.	1	46
+	+	4	41
+	+	2	0
+	+	1	46
+
+> ~/.gitignore
+	"	108	0
+	^	91	33
+	.	91	0
+	+	1	9
+	+	91	38
+	+	108	10
+	+	2	0
+	+	109	0
+	+	91	0
+
+> ~/.gitignore_global
+	"	1	0
+
+> /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-contrib-media-sources/README.md
+	"	34	0
+
+> ~/z_init.sh
+	"	1	0
 
 > /Volumes/oiva80zebin/rsyncbatch.sh
 	"	1	0
@@ -574,9 +595,6 @@ $
 	+	9	0
 	+	6	0
 	+	6	0
-
-> ~/z_init.sh
-	"	1	0
 
 > /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/swagger-ui/index.js
 	"	1	0
@@ -1725,18 +1743,3 @@ $
 	"	4	4
 	.	5	0
 	+	5	0
-
-> /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/js/videojs-ima/README.md
-	"	1	0
-
-> /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/mobile/iOS/googleads_ima_ios_objc_basic_example/Podfile.lock
-	"	1	0
-
-> /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/mobile/iOS/googleads_ima_ios_objc_basic_example/Podfile
-	"	1	0
-
-> /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/java/cp/README.md
-	"	1	18
-	^	1	19
-	.	1	18
-	+	1	18
