@@ -257,6 +257,10 @@ LuciusBlack
 " json color
 Bundle 'elzr/vim-json'
 
+" jsbeautify
+Bundle 'maksimr/vim-jsbeautify'
+nmap <F7> :Jsbeautify<CR>
+
 " powerlines replace
 Bundle 'bling/vim-airline'
 set laststatus=2

@@ -1,0 +1,4 @@
+export PATH=/usr/local/texlive/2013/bin/universal-darwin:/usr/local/sbin:$PATH
+
+#powerline-status
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh

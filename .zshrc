@@ -42,9 +42,13 @@ export PATH=$PATH:/Users/yuzebin/source/erlang/elixir/bin
 export PATH=/Users/yuzebin/.rvm/gems/ruby-2.1.5/bin:$PATH 
 
 # for boot2docker
-export DOCKER_HOST=tcp://192.168.59.104:2376
-export DOCKER_CERT_PATH=/Users/yuzebin/.boot2docker/certs/boot2docker-vm
+# export DOCKER_HOST=tcp://192.168.59.104:2376
+# export DOCKER_CERT_PATH=/Users/yuzebin/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+# for docker toolbox
+export DOCKER_HOST=tcp://192.168.99.100:2376
+export DOCKER_CERT_PATH=/Users/yuzebin/.docker/machine/certs
 
 # zebin's environment
 export ZEBIN_SRC="/Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src"
@@ -109,11 +113,12 @@ alias ex="elixir"
 alias dk="docker"
 alias vg="vagrant"
 alias dkc="docker-compose"
+alias dkm="docker-machine"
 alias psg="ps aux|grep"
 alias b2d="boot2docker"
 alias subl="/usr/bin/subl"
 alias myip="curl ifconfig.me"
-alias histg="history|grep "
+alias histg="history | grep -e "
 alias lsport="lsof -P -i -n"
 alias p4diff="/usr/local/bin/ksdiff"
 alias apktool="java -jar /usr/bin/apktool.jar"
