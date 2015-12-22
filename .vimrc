@@ -150,7 +150,7 @@ let g:EasyGrepRecursive  = 0 " Recursive searching
 let g:EasyGrepIgnoreCase = 1 " not ignorecase:0
 let g:EasyGrepFilesToExclude = "*.bak, *~, cscope.*, *.a, *.o, *.pyc, *.bak"
 
-Bundle 'klen/python-mode'
+"Bundle 'klen/python-mode'
 
 " "------------------------------------------------------------------------------
 " The ultimate snippet solution for Vim

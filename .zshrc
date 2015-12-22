@@ -49,6 +49,7 @@ export DOCKER_TLS_VERIFY=1
 # for docker toolbox
 export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=/Users/yuzebin/.docker/machine/certs
+export DOCKER_TLS_VERIFY=1
 
 # zebin's environment
 export ZEBIN_SRC="/Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src"
