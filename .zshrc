@@ -7,7 +7,7 @@ export UPDATE_ZSH_DAYS=29
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(encode64 git urltools colored-man docker docker-compose)
+plugins=(encode64 git urltools colored-man jsontools)
 
 # run on-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -120,10 +120,14 @@ alias b2d="boot2docker"
 alias subl="/usr/bin/subl"
 alias myip="curl ifconfig.me"
 alias histg="history | grep -e "
+alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
 alias lsport="lsof -P -i -n"
 alias p4diff="/usr/local/bin/ksdiff"
 alias apktool="java -jar /usr/bin/apktool.jar"
 alias randpass="pwgen -Bcny 20"
+
+# some alias for git
+alias glog="git log --oneline | nl -v0 | sed 's/^ \+/&HEAD~/'"
 
 # path for docker 
 export DK_PATH=/Users/yuzebin/zdata:/var/zdata
@@ -135,3 +139,4 @@ bak()  { cp "$1"{,.bak};}
 cdls() { cd "$1"; ls;}
 mkcd() { mkdir -p "$1"; cd "$1";}
 md5()  { md5sum "$1" | grep "$2";}
+zbrot(){ echo `echo $1 | base64 --decode` | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' }
