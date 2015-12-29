@@ -140,3 +140,4 @@ cdls() { cd "$1"; ls;}
 mkcd() { mkdir -p "$1"; cd "$1";}
 md5()  { md5sum "$1" | grep "$2";}
 zbrot(){ echo `echo $1 | base64 --decode` | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' }
+zbrote(){ echo "$1" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' | base64 }
