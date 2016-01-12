@@ -87,26 +87,27 @@ alias rm=rmtrick
 alias rmit="/bin/rm -rf"
 
 # alias for filetype
+alias -s zip='unzip'
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s bz2='tar -xjvf'
-alias -s zip='unzip'
 
+# open with
+alias -s c='vim'
+alias -s h='vim'
 alias -s py='vim'
 alias -s pl='vim' 
 alias -s rb='vim'
-alias -s php='vim'
 alias -s js='vim'
+alias -s mm='vim'
+alias -s php='vim'
 alias -s css='vim'
-alias -s html='vim'
 alias -s clj='vim'
 alias -s lsp='vim' 
-alias -s conf='vim'
-alias -s c='vim'
-alias -s h='vim'
-alias -s mm='vim'
 alias -s cpp='vim'
 alias -s hpp='vim'
+alias -s conf='vim'
+alias -s html='vim'
 alias -s java='vim'
 
 # some alias for convinient
@@ -116,10 +117,6 @@ alias vg="vagrant"
 alias dkc="docker-compose"
 alias dkm="docker-machine"
 alias psg="ps aux|grep"
-alias b2d="boot2docker"
-alias subl="/usr/bin/subl"
-alias myip="curl ifconfig.me"
-alias histg="history | grep -e "
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
 alias lsport="lsof -P -i -n"
 alias p4diff="/usr/local/bin/ksdiff"
