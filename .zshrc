@@ -44,7 +44,6 @@ export PATH=/Users/yuzebin/.rvm/gems/ruby-2.1.5/bin:$PATH
 # for boot2docker
 # export DOCKER_HOST=tcp://192.168.59.104:2376
 # export DOCKER_CERT_PATH=/Users/yuzebin/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 # for docker toolbox
 export DOCKER_HOST=tcp://192.168.99.100:2376
@@ -71,26 +70,8 @@ quoteadd()
     strfile $quote
 }
 
-# command to chg rm
-function rmtrick()
-{
-    filetail=`date +%Y%m%d%H%M%S`
-    pwdlen=$((${#HOME}+1))
-    subdir=`pwd|cut -c $pwdlen-`
-    mkdir -p ~/.filehis/$subdir
-    for f in $*
-    do
-        mv $f ~/.filehis/$dir/$f.$filetail
-    done
-}
-alias rm=rmtrick
+alias rm=rmtrash
 alias rmit="/bin/rm -rf"
-
-# alias for filetype
-alias -s zip='unzip'
-alias -s gz='tar -xzvf'
-alias -s tgz='tar -xzvf'
-alias -s bz2='tar -xjvf'
 
 # open with
 alias -s c='vim'
@@ -116,7 +97,6 @@ alias dk="docker"
 alias vg="vagrant"
 alias dkc="docker-compose"
 alias dkm="docker-machine"
-alias psg="ps aux|grep"
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
 alias lsport="lsof -P -i -n"
 alias p4diff="/usr/local/bin/ksdiff"
@@ -132,8 +112,6 @@ alias dkrun="dk run -it -v $DK_PATH "
 
 export BYOBU_PREFIX=$(brew --prefix)
 
-bak()  { cp "$1"{,.bak};}
-cdls() { cd "$1"; ls;}
 mkcd() { mkdir -p "$1"; cd "$1";}
 md5()  { md5sum "$1" | grep "$2";}
 zbrot(){ echo `echo $1 | base64 --decode` | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' }
