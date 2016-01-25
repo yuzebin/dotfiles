@@ -1,13 +1,14 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="random"
+#ZSH_THEME="random"
+ZSH_THEME="tjkirch_mod"
 DISABLE_AUTO_UPDATE="true"
 export UPDATE_ZSH_DAYS=29
 DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(encode64 git urltools colored-man jsontools)
+plugins=(encode64 git urltools colored-man jsontools web-search)
 
 # run on-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -73,23 +74,8 @@ quoteadd()
 alias rm=rmtrash
 alias rmit="/bin/rm -rf"
 
-# open with
-alias -s c='vim'
-alias -s h='vim'
-alias -s py='vim'
-alias -s pl='vim' 
-alias -s rb='vim'
-alias -s js='vim'
-alias -s mm='vim'
-alias -s php='vim'
-alias -s css='vim'
-alias -s clj='vim'
-alias -s lsp='vim' 
-alias -s cpp='vim'
-alias -s hpp='vim'
-alias -s conf='vim'
-alias -s html='vim'
-alias -s java='vim'
+alias cp="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress"
+alias cpit="/bin/cp"
 
 # some alias for convinient
 alias ex="elixir"
