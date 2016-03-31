@@ -3,6 +3,8 @@ ZSH=$HOME/.oh-my-zsh
 
 #ZSH_THEME="random"
 ZSH_THEME="tjkirch_mod"
+#ZSH_THEME="bira"
+#
 DISABLE_AUTO_UPDATE="true"
 export UPDATE_ZSH_DAYS=29
 DISABLE_CORRECTION="true"
@@ -31,6 +33,9 @@ export PATH=$PATH:/usr/local/texlive/2013/bin/universal-darwin
 # path for python2.7 
 export PATH=$PATH:/usr/local/lib/python2.7/site-packages
 
+# java_home
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
 # path for android
 export PATH=$PATH:/Users/yuzebin/Library/Android/sdk/tools
 export PATH=$PATH:/Users/yuzebin/Library/Android/sdk/platform-tools
@@ -40,7 +45,7 @@ export ANDROID_HOME=/Users/yuzebin/Library/Android/sdk
 export PATH=$PATH:/Users/yuzebin/source/erlang/elixir/bin
 
 # path for ruby
-export PATH=/Users/yuzebin/.rvm/gems/ruby-2.1.5/bin:$PATH 
+export PATH=$HOME/.rbenv/shims:/Users/yuzebin/.rvm/gems/ruby-2.1.5/bin:$PATH 
 
 # for boot2docker
 # export DOCKER_HOST=tcp://192.168.59.104:2376
@@ -77,6 +82,8 @@ alias rmit="/bin/rm -rf"
 alias cp="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress"
 alias cpit="/bin/cp"
 
+alias assh="/usr/local/bin/autossh -M 0"
+
 # some alias for convinient
 alias ex="elixir"
 alias dk="docker"
@@ -102,3 +109,15 @@ mkcd() { mkdir -p "$1"; cd "$1";}
 md5()  { md5sum "$1" | grep "$2";}
 zbrot(){ echo `echo $1 | base64 --decode` | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' }
 zbrote(){ echo "$1" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]' | base64 }
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/Applications/Cocos/Cocos2d-x
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
