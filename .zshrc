@@ -47,17 +47,13 @@ export PATH=$PATH:/Users/yuzebin/source/erlang/elixir/bin
 # path for ruby
 export PATH=$HOME/.rbenv/shims:/Users/yuzebin/.rvm/gems/ruby-2.1.5/bin:$PATH 
 
-# for boot2docker
-# export DOCKER_HOST=tcp://192.168.59.104:2376
-# export DOCKER_CERT_PATH=/Users/yuzebin/.boot2docker/certs/boot2docker-vm
+# initial pyenv virtualenv environment
+eval "$(pyenv init -)"
 
 # for docker toolbox
 export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=/Users/yuzebin/.docker/machine/certs
 export DOCKER_TLS_VERIFY=1
-
-# zebin's environment
-export ZEBIN_SRC="/Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src"
 
 alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
