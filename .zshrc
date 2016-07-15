@@ -11,7 +11,7 @@ DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # plugins=(colored-man-pages colorize docker docker-compose emoji-clock gem git-flow-avh git-hubflow postgres npm lein jsontools httpie heroku redis-cli rvm sublime urltools vagrant vi-mode )
-plugins=(redis-cli heroku docker colorize git postgres httpie git-flow)
+plugins=(heroku git httpie)
 # plugins=()
 
 # run on-my-zsh
@@ -24,16 +24,14 @@ export PATH=/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/sbin:/us
 export PATH=$PATH:/usr/local/Cellar/ctags/5.8/bin
 
 # path for rust
-export PATH=$PATH:/usr/local/Cellar/rust/1.0.0/bin
+#export PATH=$PATH:/usr/local/Cellar/rust/1.0.0/bin
 
 # path for texlive
-export PATH=$PATH:/usr/local/texlive/2013/bin/universal-darwin
-
-# path for python2.7 
-# export PATH=$PATH:/usr/local/lib/python2.7/site-packages
+#export PATH=$PATH:/usr/local/texlive/2013/bin/universal-darwin
 
 # java_home
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+#export JAVA8_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # path for android
 export PATH=$PATH:/Users/yuzebin/Library/Android/sdk/tools
@@ -41,7 +39,7 @@ export PATH=$PATH:/Users/yuzebin/Library/Android/sdk/platform-tools
 export ANDROID_HOME=/Users/yuzebin/Library/Android/sdk
 
 # path for elixir
-export PATH=$PATH:/Users/yuzebin/source/erlang/elixir/bin
+#export PATH=$PATH:/Users/yuzebin/source/erlang/elixir/bin
 
 # path for ruby
 export GEMS=/Users/yuzebin/.rvm/gems
@@ -55,7 +53,14 @@ export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=/Users/yuzebin/.docker/machine/certs
 export DOCKER_TLS_VERIFY=1
 
-export GOPATH=/usr/local/Cellar/go/1.5.2/libexec/bin
+# for golang
+#export GOPATH=/usr/local/Cellar/go/1.5.2/libexec/bin
+#export GOPATH=/usr/local/Cellar/go/1.6/libexec/bin
+export GOPATH=/Users/yuzebin/gopath
+
+# for hubot_twitter_oauth
+export HUBOT_TWITTER_CONSUMER_KEY='0gXTKSjC6U4N0fk8dHNVw'
+export HUBOT_TWITTER_CONSUMER_SECRET='hmugJM3zpWlbHvWCJmnVy7rI0U8YUhImyTPAdmOY'
 
 alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -93,11 +98,10 @@ alias ex="elixir"
 alias rm=rmtrash
 alias vg="vagrant"
 alias cat="ccat"
-alias dog="ccat"
 alias scp="rsync -avrzPS"
 alias apkt="java -jar /usr/bin/apktool.jar"
 alias assh="/usr/local/bin/autossh -M 0"
-alias diff="/usr/local/bin/ksdiff"
+alias diff="icdiff"
 alias rot13="tr '[A-Za-z]' '[N-ZA-Mn-za-m]'"
 alias lsport="lsof -P -i -n"
 
@@ -118,7 +122,8 @@ imgb64(){echo "data:image/jpeg;base64,$(base64 $1)"}
 pyinit() { eval "$(pyenv init -)";}
 alias py2="pyinit && pyenv activate py27"
 alias py3="pyinit && pyenv activate py35"
-alias pydeact="pyenv deactivate"
+alias pypy="pyinit && pyenv activate pypy3-2.4.0"
+alias pyd="pyenv deactivate"
 
 # alias for json
 alias jsonv='xargs -0 node -e "try {json = JSON.parse(process.argv[1]);} catch (e) { console.log(false); json = null;  } if(json) { console.log(true);  }"'
@@ -132,27 +137,28 @@ alias pg_reload='pg_ctl reload -D /usr/local/var/postgres -s'
 alias pg_restart='pg_stop && sleep 1 && pg_start'
 
 # alias for urlencode
-alias urldec='node -e "console.log(decodeURIComponent(process.argv[1]))"'
-alias urldec_json='xargs -0 node -e "console.log(decodeURIComponent(process.argv[1]))"'
-alias urlenc='node -e "console.log(encodeURIComponent(process.argv[1]))"'
-alias urlenc_json='xargs -0 node -e "console.log(encodeURIComponent(process.argv[1]))"'
+alias urlde='node -e "console.log(decodeURIComponent(process.argv[1]))"'
+alias urldej='xargs -0 node -e "console.log(decodeURIComponent(process.argv[1]))"'
+alias urlen='node -e "console.log(encodeURIComponent(process.argv[1]))"'
+alias urlenj='xargs -0 node -e "console.log(encodeURIComponent(process.argv[1]))"'
 
 # alias for docker
 DK_PATH=/Users/yuzebin/zdata:/var/zdata
 alias dk="docker"
 alias dkf="docker search --no-trunc"
-alias dkimg="docker images"
-alias dkrun="docker run -it -v $DK_PATH "
-alias dkpid="sudo docker inspect --format '{{.State.Pid}}'"
+alias dki="docker images"
+alias dkr="docker run -it -v $DK_PATH "
+alias dkp="sudo docker inspect --format '{{.State.Pid}}'"
 alias dkip="sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-alias dkps="docker ps"
-alias dkpsa="docker ps -a"
-alias dkrm="docker rm"
-alias dkrmi="docker rmi"
+alias dkps="docker ps -a"
 
 alias dkc="docker-compose"
 alias dkm="docker-machine"
 alias dks="docker-swarm"
+
+# alias for go
+alias gor="go run"
+alias gof="gofmt -s -w"
 
 #the implementation refs from https://github.com/jpetazzo/nsenter/blob/master/docker-enter
 function dken() {
@@ -196,3 +202,23 @@ function dken() {
         fi
     fi
 }
+
+# alias for roku dev
+export RK1="192.168.3.5"
+export RK2="192.168.3.7"
+export RK3="192.168.3.6"
+alias tn="telnet"
+
+alias rk1main="tn $RK1 8085"
+alias rk1scene="tn $RK1 8089"
+alias rk1task="tn $RK1 8090"
+
+alias rk2main="tn $RK2 8085"
+alias rk2scene="tn $RK2 8089"
+alias rk2task="tn $RK2 8090"
+
+alias rk3main="tn $RK3 8085"
+alias rk3scene="tn $RK3 8089"
+alias rk3task1="tn $RK3 8090"
+alias rk3task2="tn $RK3 8091"
+alias rk3task3="tn $RK3 8092"

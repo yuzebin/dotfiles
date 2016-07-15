@@ -124,6 +124,8 @@ nnoremap <F5> :GundoToggle<CR>
 " CVS/SVN/SVK/git/hg/bzr integration plugin
 "Bundle 'vcscommand.vim'
 
+Plugin 'fatih/vim-go'
+
 " Perform all your vim insert mode completions with Tab
 Plugin 'SuperTab'
 let g:SuperTabContextDefaultCompletionType = "<c-n>"

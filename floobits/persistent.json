@@ -1,0 +1,17 @@
+{
+  "workspaces": {
+    "yuzebin": {
+      "zebin_source": {
+        "url": "https://floobits.com/yuzebin/zebin_source", 
+        "path": "/Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/roku/txb/source"
+      }
+    }
+  }, 
+  "recent_workspaces": [
+    {
+      "url": "https://floobits.com/yuzebin/zebin_source"
+    }
+  ], 
+  "disable_account_creation": true, 
+  "auto_generated_account": true
+}

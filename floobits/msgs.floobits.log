@@ -1,0 +1,22 @@
+[Fri Jul  8 11:50:33 2016] floobits.com:3448: Connecting...
+[Fri Jul  8 11:50:34 2016] Writing {'auth': {'floobits.com': {'username': 'yuzebin', 'secret': '4leaj4t3caar4xrxdbfkqkpo3', 'api_key': 'user_f0y7uzhi1w'}}}
+[Fri Jul  8 11:50:34 2016] Unresponded msgs{1: 'create_user'}
+[Fri Jul  8 11:50:34 2016] Disconnected.
+[Fri Jul  8 11:50:34 2016] All handlers stopped. Stopping reactor.
+[Fri Jul  8 11:50:34 2016] Reactor shut down.
+[Mon Jul 11 14:43:19 2016] Created workspace https://floobits.com/yuzebin/zebin_source
+[Mon Jul 11 14:43:20 2016] floobits.com:3448: Connecting...
+[Mon Jul 11 14:43:23 2016] Creating buffer appVideoScreen.brs (2381 bytes)
+[Mon Jul 11 14:43:23 2016] yuzebin@yuzebin/zebin_source: Joined!
+[Mon Jul 11 14:43:23 2016] 1 connected clients:
+[Mon Jul 11 14:43:23 2016] yuzebin on Sublime Text 3
+[Mon Jul 11 14:43:34 2016] yuzebin removed /Volumes/HD500G/Users/yuzebin/Documents/mbp13_sync/zebin_src/roku/txb/source/FLOOBITS_README.md
+[Mon Jul 11 14:43:34 2016] Creating buffer Main.brs (7756 bytes)
+[Mon Jul 11 14:43:34 2016] Creating buffer .flooignore (55 bytes)
+[Mon Jul 11 14:43:34 2016] Creating buffer common/StringUtils.brs (3064 bytes)
+[Mon Jul 11 14:43:34 2016] Creating buffer common/Types.brs (4037 bytes)
+[Mon Jul 11 14:43:34 2016] Creating buffer common/General.brs (1154 bytes)
+[Mon Jul 11 14:43:35 2016] Creating buffer .floo (58 bytes)
+[Mon Jul 11 14:43:35 2016] Creating buffer RegistrationScreen.brs (4184 bytes)
+[Mon Jul 11 14:43:35 2016] Creating buffer urlUtils.brs (9153 bytes)
+[Mon Jul 11 14:43:35 2016] All done uploading
